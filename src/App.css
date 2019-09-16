@@ -17,13 +17,75 @@ span {
 
 /* HEADER BANNER */
 .header-banner-container {
-}
-.headline-container {
-  position: relative;
-}
-.header-banner-container img {
   width: 100%;
+  max-height: 20rem;
+  color: grey;
 }
+.header-banner-container .banner-image {
+  width: 100%;
+  opacity: 0.8;
+}
+/* JOB INTRO BOX */
+.header-banner-container .job-intro-box {
+  background: white;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 0.01rem;
+  position: relative;
+  top: -8rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.header-banner-container .headline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.company-logo {
+  max-width: 100%;
+  height: auto;
+  padding: 0.8rem 0 0.4rem 0;
+  margin: auto;
+}
+.headline-container .headline-text {
+  font-size: 0.6rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+.headline-text p {
+  margin-top: 0.6rem;
+}
+.job-intro-box .button-container {
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*align-items: stretch;*/
+  /*height: 2.5rem;*/
+}
+.button-container .button {
+  box-sizing: border-box;
+  color: #00c4b1;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: white;
+  border: 0.1rem solid #00c4b1;
+  min-width: 1.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+.button-container .button.apply {
+  text-align: center;
+}
+.button.apply p {
+  margin: 0;
+}
+
 
 /* JOB DESCRIPTION */
 .description-container {
