@@ -23,9 +23,9 @@ const JobDescription = (props) => {
     if ( allText === true ) {
       return 'description-text-box all'
     } else if ( allText === false ) {
-      return 'description-text-box'
+      return 'description-text-box less'
     } else {
-      return 'description-text-box'
+      return 'description-text-box less'
     }
   }
 

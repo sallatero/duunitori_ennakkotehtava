@@ -108,18 +108,33 @@ span {
   padding: 1rem 0 0 0;
   background: white;
   border: 0.1rem solid rgba(0,0,0,0.1);
+  /*box-shadow: none;*/
 }
 /* Styling for the job description area to follow 
 show more, show less functionality */
 .description-text-box {
+  position: relative;
   padding: 0 1rem 0 1rem;
   display: block;
   max-height: 10rem;
   overflow: hidden;
 }
+.description-text-box.less::before {
+  content: "";
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  /*margin-top: -5px;*/
+  /*: -webkit-linear-gradient(#fff, #000);
+  */
+  background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+}
 .description-text-box.all {
   max-height: 100%;
 }
+
 .toggle-link-button {
   display: flex;
   border-top: 0.1rem solid rgba(0,0,0,0.1);
