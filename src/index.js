@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import './App.css'
+//import 'max-700px.css'
+//import 'min-700px.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));

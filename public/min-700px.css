@@ -1,5 +1,5 @@
-/**************************** app.css **************************/
-/************************** Common styling *********************/
+/***************************************************************/
+/************* Styling specific to screens 700px-> *************/
 
 body {
   width: 100%;
@@ -12,18 +12,17 @@ body {
   color: #3e3e41;
 }
 
-/*
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}*/
-
 span {
   font-weight: 600;
 }
 
-/* HEADER BANNER */
+.site-canvas {
+  margin: auto;
+  width: 700px;
+  background: #f5f7f8;
+}
+
+/*** HEADER BANNER ************************************ HEADER BANNER ***********/
 .header-banner-container {
   width: 100%;
   max-height: 20rem;
@@ -35,21 +34,16 @@ span {
   max-height: 15rem;
   opacity: 0.8;
 }
-/* JOB INTRO BOX */
+/*** JOB INTRO BOX ************************************ JOB INTRO BOX ***********/
 .header-banner-container .job-intro-box {
   background: white;
-  width: 50%;
+  width: 60%;
   margin: auto;
   padding-bottom: 0.01rem;
   position: relative;
   border-radius: 0.2rem;
   top: -8rem;
-  /*
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  */
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1)
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
 .header-banner-container .headline-container {
   display: flex;
@@ -70,14 +64,16 @@ span {
 }
 .headline-text h1 {
   color: #001e43;
+  font-size: 1.5rem;
 }
 .headline-text h2 {
   color: #00c4b1;
- 
+  font-size: 1.1rem;
 }
 .headline-text p {
   margin-top: 0.6rem;
 }
+/*** BUTTONS ******************************************** BUTTONS ******************/
 .job-intro-box .button-container {
   margin-top: 0.4rem;
   margin-bottom: 0.8rem;
@@ -87,7 +83,7 @@ span {
 }
 .button-container .button, .application-info-box .button {
   box-sizing: border-box;
-  color: #001e43;/* #00c4b1;*/
+  color: #001e43;
   font-weight: 700;
   font-size: 1.1rem;
   background: white;
@@ -102,17 +98,12 @@ span {
 }
 .button-container .button.apply, .application-info-box .button.apply {
   text-align: center;
-  background: #001e43; /* #00c4b1;*/
+  background: #001e43;
   color: white;
 }
 .button.apply p {
   margin: 0;
 }
-/*
-.button a:link, .button a:visited, .button a:hover, .button a:active {
-  color: white;
-  text-decoration: none;
-}*/
 .button.like:hover, .button.like:active, .button.share:hover, .button.share:active {
   color: white;
   background: #001e43;
@@ -121,44 +112,37 @@ span {
   color: #001e43;
   background: white;
 }
-/*
-a.button-a:hover, a.button-a:active {
-  color: #001e43;
-  background: white;
-  text-decoration: none;
-}*/
 a.button-a:link, a.button-a:visited {
   color: inherit;
   background: inherit;
   text-decoration: inherit;
 } 
-/*
-.button.apply .button-a {
-  color: inherit;
-  background: inherit;
-  text-decoration: inherit;
-}*/
+
 
 
 /*** JOB DESCRIPTION *********************************** JOB DESCRIPTION ***********/
 .description-container {
   position: relative;
-  margin: 1rem 2rem 2rem 2rem;
-  /*padding: 1rem 1.5rem 1rem 1.5rem;*/
+  margin: 1rem 3rem 2rem 3rem;
   background: white;
-  border: 0.1rem solid rgba(0,0,0,0.1);
-  /*box-shadow: none;*/
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
 .description-container h2 {
   color: #001e43;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.3rem;
+  display: flex;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 /* Styling for the job description area to follow 
 show more, show less functionality */
 .description-text-box {
-  /*position: relative;*/
- /* padding: 0 1rem 0 1rem;*/
   display: block;
   max-height: 11rem;
   overflow: hidden;
@@ -166,7 +150,7 @@ show more, show less functionality */
 .description-text-box.less::before {
   content: "";
   position: absolute;
-  top: 7.5rem;
+  top: 7.9rem;
   left: 0;
   height: 3.2rem;
   width: 100%;
@@ -176,7 +160,7 @@ show more, show less functionality */
   max-height: 100%;
 }
 .description-text-box .description-text {
-  padding: 0 1rem 0 1rem;
+  padding: 0.01rem 1rem 0 1rem;
 }
 .description-text-box h3, .application-info-box .apply-date {
   color: #00c4b1;
@@ -193,7 +177,6 @@ show more, show less functionality */
   color: #00c4b1;
   text-decoration: none;
 }
-
 .description-text a:link, .description-text a:visited {
   color: #00c4b1;
   text-decoration: none;
@@ -202,35 +185,18 @@ show more, show less functionality */
   color: #001e43;
   text-decoration: none;
 }
-.toggle-link-button {
-  display: flex;
-  border-top: 0.1rem solid rgba(0,0,0,0.1);
-  padding: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  /*margin: auto;*/
-  color: #00c4b1;
-  font-weight: 700;
-  cursor: pointer;
-}
-.toggle-link-button .fa-chevron-up, .toggle-link-button .fa-chevron-down {
-  padding-left: 0.5rem;
-}
-.toggle-link-button:hover {
-  color: #001e43;
-}
 .application-info-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-top: 0.1rem solid rgba(0,0,0,0.1);
+  border-top: 2px solid rgba(0,0,0,0.1);
   padding: 1rem;
   justify-content: center;
   align-items: center;
 }
 .application-info-box .date-box {
   border-radius: 0.2rem;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
   box-sizing: border-box;
   color: #001e43;
   font-weight: 700;
@@ -245,6 +211,20 @@ show more, show less functionality */
 .application-info-box .button.apply {
   margin: 0.4rem;
 }
+.toggle-link-button {
+  display: flex;
+  border-top: 2px solid rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #00c4b1;
+  font-weight: 700;
+  cursor: pointer;
+}
+.toggle-link-button .fa-chevron-up, .toggle-link-button .fa-chevron-down {
+  padding-left: 0.5rem;
+}
+.toggle-link-button:hover {
+  color: #001e43;
+}
 
-/**************************** app-small.css **************************/
-/************* Styling specific to small screens ≤ 500px *************/

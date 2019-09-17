@@ -60,8 +60,8 @@ const JobDescription = (props) => {
   return (
     <div className='description-container'>
       <div className={classForTextBox()}>
+        <h2>Työpaikkakuvaus</h2>
         <div className='description-text'>
-          <h2>Työpaikkakuvaus</h2>
           <p>
             <h3>Menestykseen kotimaisella työllä!</h3>
           </p>

@@ -4,9 +4,11 @@ import HeaderBanner from './Content/HeaderBanner'
 
 const App = () => {
   return (
-    <div className='page-container'>
-      <HeaderBanner />
-      <JobDescription />
+    <div className='site-canvas'>
+      <div className='page-container'>
+        <HeaderBanner />
+        <JobDescription />
+      </div>
     </div>
   )
 }
