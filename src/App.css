@@ -123,11 +123,17 @@ a.button-a:hover, a.button-a:active {
   background: white;
   text-decoration: none;
 }*/
+a.button-a:link, a.button-a:visited {
+  color: inherit;
+  background: inherit;
+  text-decoration: inherit;
+} 
+/*
 .button.apply .button-a {
   color: inherit;
   background: inherit;
   text-decoration: inherit;
-}
+}*/
 
 
 /*** JOB DESCRIPTION *********************************** JOB DESCRIPTION ***********/

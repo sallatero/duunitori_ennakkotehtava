@@ -24,12 +24,17 @@ const HeaderBanner = () => {
           <div className='button share'>
             <i class="fas fa-share-square"></i>
           </div>
-          <div className='button apply'>
-            <a 
+
+          <a 
               className='button-a'
               href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
-              rel='noopener noreferrer' target='_blank'><p>Hae työpaikkaa</p></a>
+              rel='noopener noreferrer' target='_blank'>
+
+          <div className='button apply'>
+            <p>Hae työpaikkaa</p>
           </div>
+          </a>
+
         </div>
       </div>
     </div>
