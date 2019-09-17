@@ -1,6 +1,10 @@
 /***************************************************************/
 /************* Styling specific to screens 700px-> *************/
 
+/* Adjusting the width of the description container
+ * to be around 80 characters -> improves readability
+ */
+
 body {
   width: 100%;
   margin: 0;
@@ -25,13 +29,13 @@ span {
 /*** HEADER BANNER ************************************ HEADER BANNER ***********/
 .header-banner-container {
   width: 100%;
-  max-height: 20rem;
+  max-height: 28rem;
   overflow: hidden;
 }
 .header-banner-container .banner-image {
   width: 100%;
   object-fit: cover;
-  max-height: 15rem;
+  max-height: 21rem;
   opacity: 0.8;
 }
 /*** JOB INTRO BOX ************************************ JOB INTRO BOX ***********/
@@ -39,15 +43,15 @@ span {
   background: white;
   width: 60%;
   margin: auto;
-  padding-bottom: 0.01rem;
+  padding: 0.4rem;
   position: relative;
   border-radius: 0.2rem;
-  top: -8rem;
+  top: -7rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
 .header-banner-container .headline-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: stretch;
 }
@@ -58,28 +62,35 @@ span {
   margin: auto;
 }
 .headline-container .headline-text {
+  padding: 1.3rem 0 1rem 0.2rem;
+  margin: auto;
   font-size: 0.6rem;
   line-height: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
 .headline-text h1 {
   color: #001e43;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .headline-text h2 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   color: #00c4b1;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .headline-text p {
   margin-top: 0.6rem;
+  font-size: 0.9rem;
 }
 /*** BUTTONS ******************************************** BUTTONS ******************/
 .job-intro-box .button-container {
-  margin-top: 0.4rem;
-  margin-bottom: 0.8rem;
+  margin: 0.2rem 0.4rem 0.8rem 0.4rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: stretch;
+}
+.button-container .button-a {
+  flex-grow: 1;
 }
 .button-container .button, .application-info-box .button {
   box-sizing: border-box;
@@ -100,9 +111,14 @@ span {
   text-align: center;
   background: #001e43;
   color: white;
+  flex-grow: 4;
 }
 .button.apply p {
   margin: 0;
+}
+.button-a .button-text {
+  display: inline;
+  padding-inline-start: 0.4rem;
 }
 .button.like:hover, .button.like:active, .button.share:hover, .button.share:active {
   color: white;

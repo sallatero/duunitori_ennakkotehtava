@@ -23,6 +23,7 @@ const HeaderBanner = () => {
             rel='noopener noreferrer' target='_blank'>
             <div className='button like'>
               <i class="fas fa-heart"></i>
+              <div className='button-text'>Like</div>
             </div>
           </a>
           <a className='button-a'
@@ -30,6 +31,7 @@ const HeaderBanner = () => {
             rel='noopener noreferrer' target='_blank'>
             <div className='button share'>
               <i class="fas fa-share-square"></i>
+              <div className='button-text'>Share</div>
             </div>
           </a>
           <a className='button-a'

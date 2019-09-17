@@ -2,6 +2,11 @@
 /************************** Common styling *********************/
 /********* Styling designed for small screens < 700px **********/
 
+/* In the job intro box the like and share buttons 
+ * don't display the text, but rely on the icons 
+ * -> buttons fit into smaller space
+ */
+
 body {
   width: 100%;
   margin: 0;
@@ -54,10 +59,12 @@ span {
 .company-logo {
   max-width: 100%;
   height: auto;
-  padding: 0.8rem 0 0.4rem 0;
+  padding-top: 1rem;
   margin: auto;
 }
 .headline-container .headline-text {
+  padding-top: 0.1rem;
+  margin: auto;
   font-size: 0.6rem;
   line-height: 0.5rem;
   text-align: center;
@@ -72,6 +79,7 @@ span {
 }
 .headline-text p {
   margin-top: 0.6rem;
+  font-size: 0.8rem;
 }
 /*** BUTTONS ******************************************** BUTTONS ******************/
 .job-intro-box .button-container {
@@ -95,6 +103,9 @@ span {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   cursor: pointer;
+}
+.button-container .button-text {
+  display: none;
 }
 .button-container .button.apply, .application-info-box .button.apply {
   text-align: center;
