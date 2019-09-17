@@ -8,7 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Source Sans Pro, sans-serif;
   font-size: 16px;
-  background: silver;
+  background: #f5f7f8;
+  color: #3e3e41;
 }
 
 span {
@@ -19,7 +20,6 @@ span {
 .header-banner-container {
   width: 100%;
   max-height: 20rem;
-  color: grey;
 }
 .header-banner-container .banner-image {
   width: 100%;
@@ -53,6 +53,13 @@ span {
   font-size: 0.6rem;
   line-height: 0.5rem;
   text-align: center;
+}
+.headline-text h1 {
+  color: #001e43;
+}
+.headline-text h2 {
+  color: #00c4b1;
+ 
 }
 .headline-text p {
   margin-top: 0.6rem;
@@ -105,9 +112,10 @@ show more, show less functionality */
 }
 .toggle-link-button {
   padding: 1rem;
+  color: #00c4b1;
 }
 .toggle-link-button:hover {
-  color: #00c4b1;
+  color: #001e43;
 }
 
 /**************************** app-small.css **************************/
