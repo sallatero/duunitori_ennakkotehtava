@@ -12,6 +12,13 @@ body {
   color: #3e3e41;
 }
 
+/*
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}*/
+
 span {
   font-weight: 600;
 }
@@ -20,9 +27,12 @@ span {
 .header-banner-container {
   width: 100%;
   max-height: 20rem;
+  overflow: hidden;
 }
 .header-banner-container .banner-image {
   width: 100%;
+  object-fit: cover;
+  max-height: 15rem;
   opacity: 0.8;
 }
 /* JOB INTRO BOX */
@@ -74,26 +84,25 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /*align-items: stretch;*/
-  /*height: 2.5rem;*/
 }
-.button-container .button {
+.button-container .button, .application-info-box .button.apply {
   box-sizing: border-box;
-  color: #00c4b1;
+  color: #001e43;/* #00c4b1;*/
   font-weight: 700;
   font-size: 1.1rem;
   background: white;
-  border: 0.08rem solid #00c4b1;
+  border: 0.08rem solid #001e43;
   border-radius: 0.2rem;
   min-width: 1.4rem;
   padding: 0.5rem;
   text-align: center;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
+  cursor: pointer;
 }
-.button-container .button.apply {
+.button-container .button.apply, .application-info-box .button.apply {
   text-align: center;
-  background: #00c4b1;
+  background: #001e43; /* #00c4b1;*/
   color: white;
 }
 .button.apply p {
@@ -101,40 +110,68 @@ span {
 }
 
 
-/* JOB DESCRIPTION */
+/*** JOB DESCRIPTION *********************************** JOB DESCRIPTION ***********/
 .description-container {
-  margin: 2rem;
+  position: relative;
+  margin: 1rem 2rem 2rem 2rem;
   /*padding: 1rem 1.5rem 1rem 1.5rem;*/
-  padding: 1rem 0 0 0;
   background: white;
   border: 0.1rem solid rgba(0,0,0,0.1);
   /*box-shadow: none;*/
 }
+.description-container h2 {
+  color: #001e43;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 /* Styling for the job description area to follow 
 show more, show less functionality */
 .description-text-box {
-  position: relative;
-  padding: 0 1rem 0 1rem;
+  /*position: relative;*/
+ /* padding: 0 1rem 0 1rem;*/
   display: block;
-  max-height: 10rem;
+  max-height: 11rem;
   overflow: hidden;
 }
 .description-text-box.less::before {
   content: "";
   position: absolute;
-  top: 7rem;
+  top: 7.5rem;
   left: 0;
-  height: 3rem;
+  height: 3.2rem;
   width: 100%;
-  /*margin-top: -5px;*/
-  /*: -webkit-linear-gradient(#fff, #000);
-  */
   background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
 }
 .description-text-box.all {
   max-height: 100%;
 }
+.description-text-box .description-text {
+  padding: 0 1rem 0 1rem;
+}
+.description-text-box h3, .application-info-box .apply-date {
+  color: #00c4b1;
+  font-weight: bold;
+}
+.description-text-box span {
+  font-weight: bold;
+}
+.description-text-box .apply-heading {
+  font-weight: bold;
+  color: #3e3e41;
+}
+.description-text a {
+  color: #00c4b1;
+  text-decoration: none;
+}
 
+.description-text a:link, .description-text a:visited {
+  color: #00c4b1;
+  text-decoration: none;
+}
+.description-text a:hover, .description-text a:active {
+  color: #001e43;
+  text-decoration: none;
+}
 .toggle-link-button {
   display: flex;
   border-top: 0.1rem solid rgba(0,0,0,0.1);
@@ -143,9 +180,40 @@ show more, show less functionality */
   align-items: center;
   /*margin: auto;*/
   color: #00c4b1;
+  font-weight: 700;
+  cursor: pointer;
+}
+.toggle-link-button .fa-chevron-up, .toggle-link-button .fa-chevron-down {
+  padding-left: 0.5rem;
 }
 .toggle-link-button:hover {
   color: #001e43;
+}
+.application-info-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 0.1rem solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.application-info-box .date-box {
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  color: #001e43;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 0.2rem;
+  min-width: 1.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.4rem;
+}
+.application-info-box .button.apply {
+  margin: 0.4rem;
 }
 
 /**************************** app-small.css **************************/
