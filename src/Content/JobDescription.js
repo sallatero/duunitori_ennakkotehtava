@@ -28,7 +28,9 @@ export const ApplicationInfoBox = (props) => {
         <div className='apply-date'>18.09.2019 klo 23:59</div>
         </div>
       <div className='button apply'>
-        <p>Hae työpaikkaa</p>
+        <p><a href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
+          rel='noopener noreferrer' target='_blank'>Hae työpaikkaa</a>
+        </p>
       </div>
     </div>
 

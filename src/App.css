@@ -85,7 +85,7 @@ span {
   flex-direction: row;
   justify-content: center;
 }
-.button-container .button, .application-info-box .button.apply {
+.button-container .button, .application-info-box .button {
   box-sizing: border-box;
   color: #001e43;/* #00c4b1;*/
   font-weight: 700;
@@ -107,6 +107,26 @@ span {
 }
 .button.apply p {
   margin: 0;
+}
+/*
+.button a:link, .button a:visited, .button a:hover, .button a:active {
+  color: white;
+  text-decoration: none;
+}*/
+.button.apply:hover, .button.apply:active {
+  color: #001e43;
+  background: white;
+}
+/*
+a.button-a:hover, a.button-a:active {
+  color: #001e43;
+  background: white;
+  text-decoration: none;
+}*/
+.button.apply .button-a {
+  color: inherit;
+  background: inherit;
+  text-decoration: inherit;
 }
 
 
