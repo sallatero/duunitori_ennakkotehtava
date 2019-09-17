@@ -32,10 +32,14 @@ span {
   margin: auto;
   padding-bottom: 0.01rem;
   position: relative;
+  border-radius: 0.2rem;
   top: -8rem;
+  /*
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  */
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1)
 }
 .header-banner-container .headline-container {
   display: flex;
@@ -79,7 +83,8 @@ span {
   font-weight: 700;
   font-size: 1.1rem;
   background: white;
-  border: 0.1rem solid #00c4b1;
+  border: 0.08rem solid #00c4b1;
+  border-radius: 0.2rem;
   min-width: 1.4rem;
   padding: 0.5rem;
   text-align: center;
@@ -88,6 +93,8 @@ span {
 }
 .button-container .button.apply {
   text-align: center;
+  background: #00c4b1;
+  color: white;
 }
 .button.apply p {
   margin: 0;
@@ -97,21 +104,29 @@ span {
 /* JOB DESCRIPTION */
 .description-container {
   margin: 2rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  /*padding: 1rem 1.5rem 1rem 1.5rem;*/
+  padding: 1rem 0 0 0;
   background: white;
+  border: 0.1rem solid rgba(0,0,0,0.1);
 }
 /* Styling for the job description area to follow 
 show more, show less functionality */
 .description-text-box {
+  padding: 0 1rem 0 1rem;
   display: block;
-  max-height: 30%;
+  max-height: 10rem;
   overflow: hidden;
 }
 .description-text-box.all {
   max-height: 100%;
 }
 .toggle-link-button {
-  padding: 1rem;
+  display: flex;
+  border-top: 0.1rem solid rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  /*margin: auto;*/
   color: #00c4b1;
 }
 .toggle-link-button:hover {
