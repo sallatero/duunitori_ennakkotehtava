@@ -18,23 +18,27 @@ const HeaderBanner = () => {
           </div>
         </div>
         <div className='button-container'>
-          <div className='button like'>
-            <i class="fas fa-heart"></i>
-          </div>
-          <div className='button share'>
-            <i class="fas fa-share-square"></i>
-          </div>
-
-          <a 
-              className='button-a'
-              href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
-              rel='noopener noreferrer' target='_blank'>
-
-          <div className='button apply'>
-            <p>Hae työpaikkaa</p>
-          </div>
+          <a className='button-a'
+            href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
+            rel='noopener noreferrer' target='_blank'>
+            <div className='button like'>
+              <i class="fas fa-heart"></i>
+            </div>
           </a>
-
+          <a className='button-a'
+            href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
+            rel='noopener noreferrer' target='_blank'>
+            <div className='button share'>
+              <i class="fas fa-share-square"></i>
+            </div>
+          </a>
+          <a className='button-a'
+            href='https://mps.rekrytointi.com/paikat/index.php?jid=2853&key=&o=A_RJ'
+            rel='noopener noreferrer' target='_blank'>
+            <div className='button apply'>
+              <p>Hae työpaikkaa</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

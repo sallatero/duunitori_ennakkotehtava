@@ -113,6 +113,10 @@ span {
   color: white;
   text-decoration: none;
 }*/
+.button.like:hover, .button.like:active, .button.share:hover, .button.share:active {
+  color: white;
+  background: #001e43;
+}
 .button.apply:hover, .button.apply:active {
   color: #001e43;
   background: white;
