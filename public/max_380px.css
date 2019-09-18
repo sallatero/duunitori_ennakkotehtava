@@ -1,13 +1,12 @@
-/***************************************************************/
-/************************** Common styling *********************/
-/********* Styling designed for small screens < 700px **********/
+/****************************************************************/
+/*** Styling designed for small screens < 380px (iPhone 5, 6) ***/
 
 /* In the job intro box the like and share buttons 
  * don't display the text, but rely on the icons 
  * -> buttons fit into smaller space
  */
 
-body {
+ body {
   width: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -71,11 +70,11 @@ span {
 }
 .headline-text h1 {
   color: #001e43;
-  font-size: 1.5rem;
+  font-size: 0.6rem;
 }
 .headline-text h2 {
   color: #00c4b1;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 .headline-text p {
   margin-top: 0.6rem;
