@@ -16,6 +16,8 @@ Omassa versiossa
 Ohjelma on rakennettu JavaScriptillä ja Reactilla ja tyylit on määritelty CSS-tiedostossa. CSS-tyyleissä on defaultina käytetty isoa ruutua (yli 700px) ja pienemmille ruuduille on määritelty eroavaisuudet media queryinä.
 
 Sivusto pyörii osoitteessa:
+https://safe-inlet-89138.herokuapp.com/
+
 
 
 ## 
