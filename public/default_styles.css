@@ -1,5 +1,5 @@
 /***************************************************************/
-/************* Styling specific to screens 700px-> *************/
+/************* Styling specific to big screens 700px-> *************/
 
 /* Adjusting the width of the description container
  * to be around 80 characters -> improves readability
@@ -25,6 +25,11 @@ span {
   width: 700px;
   background: #f5f7f8;
 }
+@media (max-width: 700px) {
+  .site-canvas {
+    width: 100%;
+  }
+}
 
 /*** HEADER BANNER ************************************ HEADER BANNER ***********/
 .header-banner-container {
@@ -32,12 +37,24 @@ span {
   max-height: 28rem;
   overflow: hidden;
 }
+@media (max-width: 700px) {
+  .header-banner-container {
+    max-height: 20rem;
+  }
+}
+
 .header-banner-container .banner-image {
   width: 100%;
   object-fit: cover;
   max-height: 21rem;
   opacity: 0.8;
 }
+@media (max-width: 700px) {
+  .header-banner-container .banner-image {
+    max-height: 15rem;
+  }
+}
+  
 /*** JOB INTRO BOX ************************************ JOB INTRO BOX ***********/
 .header-banner-container .job-intro-box {
   background: white;
@@ -49,6 +66,13 @@ span {
   top: -7rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
+@media (max-width: 700px) {
+  .header-banner-container .job-intro-box {
+    padding: 0 0 0.4rem 0;
+    top: -8rem;
+  }
+}
+
 .header-banner-container .headline-container {
   display: flex;
   flex-direction: row-reverse;
