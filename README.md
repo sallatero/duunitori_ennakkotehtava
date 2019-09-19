@@ -1,3 +1,25 @@
+## Duunitorin uusi työpaikkailmoitussivu
+
+Ajatuksen pohjana olivat seuraavat havainnot, jotka tein nykyistä sivua selatessani
+- Isolla sivulla näkyy oikeassa reunassa yrityksen tietoja. Kun ruutua pienentää, se hyppää samaan kolumniin itse ilmoituksen kanssa, mutta joutuu liian kauas. Siihen väliin tulee jo sellaista asiaa joka ei liity tähän työpaikkaan.
+- Työnantajasta on tietoa kahdessa paikassa, (isolla ruudulla) sivun oikeassa ylälaidassa, sekä alempana oikeassa laidassa. 
+- iPhone 6:lla selattaessa landscapessa, kuvituskuva ei levene samassa suhteessa kuin teksti.
+
+Omassa versiossa
+- Rakensin ilmoituksen yhdelle palstalle ja ruudun koon mukaan ladoin asioita joko vierekkäin tai allekkain.
+- Toin työpaikan päätiedot (titteli, yritys, logo ja nappulat) enemmän esiin erillisessä laatikossa kuvituskuvan päällä
+- Sivulla on mukana sekä ilmoitusteksti, että yrityksen tiedot, molemmat omina laatikoinaan, jotka voi avata ja sulkea. Näin käyttäjä näkee alussa jo heti mitä osioita sivulla on
+- Työpaikkakuvaus-osassa käytin selviä väliotsikoita, joista lukijan on helppo bongata eri aiheet (mitä odotetaan, mitä tarjotaan, mistä saa lisätietoja, miten haetaan jne). Hakuajat toin isommin ja selvemmin esiin osion lopussa, jossa tarjolla myös hakunappula.
+- Työnantajakuvauksessa ryhmittelin tiedot perustiedoiksi osion yläosaan, sekä selvemmät koknaisuudet (taloustiedot ja sosiaalisen median linkit) omiksi laatikoikseen. Osion lopussa on samanlaine nappula kuin työpaikkakuvauksessa, mutta tämä vie tarkempiin tietoihin työnantajasta.
+- Näytä lisää -toiminnallisuus työpaikkakuvauksessa ja työnantajakuvauksessa on tuotu esiin selvemmin, kun hover-toiminto kattaa koko palkin, jossa Näytä lisää lukee
+
+Ohjelma on rakennettu JavaScriptillä ja Reactilla ja tyylit on määritelty CSS-tiedostossa. CSS-tyyleissä on defaultina käytetty isoa ruutua (yli 700px) ja pienemmille ruuduille on määritelty eroavaisuudet media queryinä.
+
+Sivusto pyörii osoitteessa:
+
+
+## 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
