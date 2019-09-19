@@ -256,7 +256,7 @@ span {
   flex-grow: 1;
 }
 
-.button-container .button, .application-info-box .button {
+.button-container .button, .application-info-box .button, .external-link .button {
   box-sizing: border-box;
   color: #001e43;
   font-weight: 700;
@@ -284,7 +284,7 @@ span {
   }
 }
 
-.button-container .button.apply, .application-info-box .button.apply {
+.button.apply {
   text-align: center;
   background: #00c4b1;
   border: 0.08rem solid #00c4b1;
@@ -436,11 +436,6 @@ show more, show less functionality */
 .description-text-box span {
   font-weight: bold;
 }
-/* turha/vanha -> pois
-.description-text-box .apply-heading {
-  font-weight: bold;
-  color: #3e3e41;
-}*/
 .description-text a {
   color: #00c4b1;
   text-decoration: none;
@@ -539,20 +534,20 @@ show more, show less functionality */
   }
 }
 
-.application-info-box .button.apply {
+.application-info-box .button.apply, .external-link .button.apply {
   margin: 0.4rem;
   padding: 0.8rem;
   font-size: 1.2rem;
 }
 @media (max-width: 700px) {
-  .application-info-box .button.apply {
+  .application-info-box .button.apply, .external-link .button.apply {
     margin: 0.3rem;
     padding: 0.6rem;
     font-size: 1.1rem;
   }
 }
 @media (max-width: 380px) {
-  .application-info-box .button.apply {
+  .application-info-box .button.apply, .external-link .button.apply {
     margin: 0;
     padding: 0.6rem;
     font-size: 1rem;
@@ -579,5 +574,177 @@ show more, show less functionality */
   background-color: #001e43;
   color: white;
 
+}
+
+/*** COMPANY DESCRIPTION ************************ COMPANY DESCRIPTION ******/
+.company-container .description-content {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(0,0,0,0.1);
+  padding: 1rem;
+  align-content: stretch;
+}
+@media (max-width: 380px) {
+  .company-container .description-content {
+    padding: 0.4rem;
+  }
+}
+
+.description-content .basics {
+  display: flex;
+  flex-direction: row;
+}
+.basics-row1, .basics-row2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.company-content {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+.basics, .company-content.finances, .company-content.social {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  background: white;  
+  padding: 0.5rem;
+  text-align: left;
+  margin: 0.4rem;
+}
+.company-table {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 380px) {
+  .finances .company-table {
+    flex-direction: column;
+  }
+}
+
+.company-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+@media (max-width: 700px) {
+  .finances .company-content {
+    text-align: center;
+  }
+  .finances span {
+    display: block;
+  }
+}
+@media (max-width: 380px) {
+  .finances .company-content {
+    flex-direction: row;
+    text-align: left;
+  }
+  .finances span {
+    display: inline;
+  }
+  .social .social-link {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+}
+
+.company-content .company-heading {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #00c4b1;
+}
+@media (max-width: 700px) {
+  .company-content .company-heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #00c4b1;
+  }
+}
+@media (max-width: 380px) {
+  .company-content .company-heading {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #00c4b1;
+  }
+}
+
+.company-content .heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #001e43;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .company-content .heading {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #001e43;
+  } 
+}
+@media (max-width: 380px) {
+  .company-content .heading {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #001e43;
+    padding-right: 0.3rem;
+  } 
+}
+
+.company-content .detail {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #3e3e41;
+}
+@media (max-width: 380px) {
+  .company-content .detail {
+    font-weight: normal;
+    font-size: 0.8rem;
+  } 
+}
+.company-content span {
+  padding-inline-start: 0.3rem;
+  font-weight: bold;
+  color: #00c4b1;
+}
+
+/*** SOCIAL ************************************ SOCIAL *****/
+.social-link {
+  margin: 1rem;
+  padding: 0 3.7rem 0 3.7rem;
+  /*
+  .social .social-link {
+    
+  }
+  */
+}
+.social-link .social-a {
+  color: #001e43;
+  font-size: 2rem;
+}
+@media (max-width: 380px) {
+  .social-link .social-a {
+    font-size: 1.2rem;
+  } 
+}
+
+.social-link .fab {
+  border-radius: 0.3rem;
+}
+.fa-facebook-f {
+  font-size: 1.8rem;
+}
+@media (max-width: 380px) {
+  .fa-facebook-f {
+    font-size: 1.1rem;
+  } 
+}
+.social-a:link, .social-a:visited {
+  color: #001e43;
+}
+.social-a:hover, .social-a:active {
+  color: #00c4b1;
 }
 
