@@ -90,32 +90,33 @@ const CompanyDescription = () => {
               Yritys sosiaalisessa mediassa
             </div>
             <div className='company-table'>
+
               <div className='social-link'>
-                <a className='social-a'
-                  href='https://www.facebook.com/MPS-Enterprises-324592147580970/'
-                  rel='noopener noreferrer' target='_blank'>
-                  <div className='button facebook'>
+                <div className='button facebook'>
+                  <a className='social-a'
+                    href='https://www.facebook.com/MPS-Enterprises-324592147580970/'
+                    rel='noopener noreferrer' target='_blank'>
                     <i class="fab fa-facebook-f"></i>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <div className='social-link'>
-                <a className='social-a'
-                  href='https://twitter.com/mpsfinland'
-                  rel='noopener noreferrer' target='_blank'>
-                  <div className='button twitter'>
+                <div className='button twitter'>
+                  <a className='social-a'
+                    href='https://twitter.com/mpsfinland'
+                    rel='noopener noreferrer' target='_blank'>
                     <i class="fab fa-twitter"></i>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
               <div className='social-link'>
-                <a className='social-a'
-                  href='https://www.linkedin.com/showcase/9270735/about'
-                  rel='noopener noreferrer' target='_blank'>
-                  <div className='button linkedin'>
+                <div className='button linkedin'>
+                  <a className='social-a'
+                    href='https://www.linkedin.com/showcase/9270735/about'
+                    rel='noopener noreferrer' target='_blank'>
                     <i class="fab fa-linkedin-in"></i>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
