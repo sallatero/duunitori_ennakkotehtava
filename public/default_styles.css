@@ -353,7 +353,7 @@ show more, show less functionality */
   }
 }
 
-.description-text-box h3, .application-info-box .apply-date {
+.description-text-box h3 {
   color: #00c4b1;
   font-weight: bold;
   font-size: 1.3rem;
@@ -372,10 +372,11 @@ show more, show less functionality */
 .description-text-box span {
   font-weight: bold;
 }
+/* turha/vanha -> pois
 .description-text-box .apply-heading {
   font-weight: bold;
-  color: red; /* #3e3e41;*/
-}
+  color: #3e3e41;
+}*/
 .description-text a {
   color: #00c4b1;
   text-decoration: none;
@@ -388,32 +389,111 @@ show more, show less functionality */
   color: #001e43;
   text-decoration: none;
 }
+
+/*** APPLICATION INFO ************************************** APPLICATION INFO ************/
 .application-info-box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   border-top: 2px solid rgba(0,0,0,0.1);
   padding: 1rem;
-  justify-content: center;
-  align-items: center;
+  align-content: stretch;
 }
-.application-info-box .date-box {
+@media (max-width: 380px) {
+  .application-info-box {
+    padding: 0.4rem;
+  }
+}
+
+.date-box-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+@media (max-width: 380px) {
+  .date-box-container {
+    flex-direction: column;
+  }
+}
+
+.date-box-container .date-box {
+  display: flex;
+  flex-direction: row;
   border-radius: 0.2rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
   box-sizing: border-box;
-  color: #001e43;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background: white;
   border-radius: 0.2rem;
   min-width: 1.4rem;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
   margin: 0.4rem;
+  width: 50%;
 }
+@media (max-width: 700px) {
+  .date-box-container .date-box {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 380px) {
+  .date-box-container .date-box {
+    width: 100%;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 0.2rem 0 0.3rem 0;
+  }
+}
+
+.date-box .date-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #001e43;
+}
+@media (max-width: 380px) {
+  .date-box .date-heading {
+    flex-direction: row;
+  }
+}
+.date-heading div, .apply-date div {
+  padding-inline-end: 0.25rem;
+}
+
+.date-box .apply-date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #00c4b1;
+}
+@media (max-width: 380px) {
+  .date-box .apply-date {
+    flex-direction: row;
+  }
+}
+
 .application-info-box .button.apply {
   margin: 0.4rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
 }
+@media (max-width: 700px) {
+  .application-info-box .button.apply {
+    margin: 0.3rem;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 380px) {
+  .application-info-box .button.apply {
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+/**** TOGGLE BUTTON *********************************************** TOGGLE BUTTON *********/
 .toggle-link-button {
   display: flex;
   border-top: 2px solid rgba(0,0,0,0.1);
