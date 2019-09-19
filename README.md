@@ -8,6 +8,7 @@ Ajatuksen pohjana olivat seuraavat havainnot, jotka tein nykyistä sivua selates
 Omassa versiossa
 - Rakensin ilmoituksen yhdelle palstalle ja ruudun koon mukaan ladoin asioita joko vierekkäin tai allekkain.
 - Toin työpaikan päätiedot (titteli, yritys, logo ja nappulat) enemmän esiin erillisessä laatikossa kuvituskuvan päällä
+  - Nappulat ohjaavat nyt kaikki samaan, eli työpaikan hakuun
 - Sivulla on mukana sekä ilmoitusteksti, että yrityksen tiedot, molemmat omina laatikoinaan, jotka voi avata ja sulkea. Näin käyttäjä näkee alussa jo heti mitä osioita sivulla on
 - Työpaikkakuvaus-osassa käytin selviä väliotsikoita, joista lukijan on helppo bongata eri aiheet (mitä odotetaan, mitä tarjotaan, mistä saa lisätietoja, miten haetaan jne). Hakuajat toin isommin ja selvemmin esiin osion lopussa, jossa tarjolla myös hakunappula.
 - Työnantajakuvauksessa ryhmittelin tiedot perustiedoiksi osion yläosaan, sekä selvemmät koknaisuudet (taloustiedot ja sosiaalisen median linkit) omiksi laatikoikseen. Osion lopussa on samanlaine nappula kuin työpaikkakuvauksessa, mutta tämä vie tarkempiin tietoihin työnantajasta.
@@ -16,6 +17,8 @@ Omassa versiossa
 Ohjelma on rakennettu JavaScriptillä ja Reactilla ja tyylit on määritelty CSS-tiedostossa. CSS-tyyleissä on defaultina käytetty isoa ruutua (yli 700px) ja pienemmille ruuduille on määritelty eroavaisuudet media queryinä.
 
 Sivusto pyörii osoitteessa:
+https://safe-inlet-89138.herokuapp.com/
+
 
 
 ## 
