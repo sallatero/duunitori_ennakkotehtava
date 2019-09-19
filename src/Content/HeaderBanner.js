@@ -4,8 +4,10 @@ const HeaderBanner = () => {
 
   return (
     <div className='header-banner-container'>
-      <img className='banner-logo' src='logo-duunitori-rgb-horisontal-mono.png' alt='Duunitori logo' width='100%' />
       <img className='banner-image' src='SieviImage.jpg' alt='Sievi background' width='100%' />
+      <div className='banner-logo-bg'>
+        <img className='banner-logo' src='logo-duunitori-rgb-horisontal-mono.png' alt='Duunitori logo' width='100%' />       
+      </div>
       <div className='job-intro-box'>
         <div className='headline-container'>
           <img className='company-logo' src='https://duunitori.imgix.net/static/250192836e3e41659bfff5b4a0b5c1b6.jpg?auto=format&lossless=true&w=100' 

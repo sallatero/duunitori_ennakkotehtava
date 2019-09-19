@@ -29,14 +29,12 @@ span {
 
 .site-canvas {
   width: 100%;
-  /*background: #f5f7f8;*/
   background-color: #00c4b1;
 }
 
 .page-container {
   margin: auto;
   width: 700px;
-/*  background:#f5f7f8;*/
   background: white;
   border-radius: 0.2rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
@@ -52,39 +50,64 @@ span {
   width: 100%;
   max-height: 28rem;
   overflow: hidden;
+  position: relative;
 }
 @media (max-width: 700px) {
   .header-banner-container {
-    max-height: 20rem;
+    max-height: 21rem;
   }
 }
 @media (max-width: 380px) {
   .header-banner-container {
-    max-height: 14rem;
+    max-height: 15rem;
   }
 }
 
 .header-banner-container .banner-image {
   width: 100%;
   object-fit: cover;
+  position: relative;
   max-height: 21rem;
   opacity: 0.8;
 }
 @media (max-width: 700px) {
   .header-banner-container .banner-image {
-    max-height: 15rem;
+    max-height: 13.5rem;
+  }
+}
+  
+.header-banner-container .banner-logo-bg {
+  width: 10rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 0 0 0.2rem 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: grid;
+}
+@media (max-width: 700px) {
+  .header-banner-container .banner-logo-bg {
+    width: 8.3rem;
+    height: 2.6rem;
+  }
+}
+@media (max-width: 380px) {
+  .header-banner-container .banner-logo-bg {
+    width: 6.1rem;
+    height: 1.9rem;
   }
 }
 
-.header-banner-container .banner-logo {
-  width: 20%;
-  background: white;
-  padding: 0.1rem;
+.banner-logo {
+  width: 80%;
+  margin: auto;
   position: relative;
-  top: 3rem;
-  /*object-fit: cover;*/
+  top: 0.15rem;
 }
-  
+
+
 /*** JOB INTRO BOX ************************************ JOB INTRO BOX ***********/
 .header-banner-container .job-intro-box {
   background: white;
@@ -92,20 +115,20 @@ span {
   margin: auto;
   padding: 0.4rem;
   position: relative;
+  top: -7.7rem;
   border-radius: 0.2rem;
-  top: -7rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
 @media (max-width: 700px) {
   .header-banner-container .job-intro-box {
     padding: 0 0 0.1rem 0;
-    top: -6rem;
+    top: -7rem;
   }
 }
 @media (max-width: 380px) {
   .header-banner-container .job-intro-box {
     padding: 0 0 0.1rem 0;
-    top: -4.5rem;
+    top: -4.6rem;
   }
 }
 
@@ -130,7 +153,7 @@ span {
 @media (max-width: 700px) {
   .company-logo {
     max-width: 30%;
-    padding: 1rem 0 0 0;
+    padding: 0.1rem 0 0 0;
   }
 }
 
