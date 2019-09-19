@@ -286,7 +286,8 @@ span {
 
 .button-container .button.apply, .application-info-box .button.apply {
   text-align: center;
-  background: #001e43;
+  background: #00c4b1;
+  border: 0.08rem solid #00c4b1;
   color: white;
   flex-grow: 4;
 }
@@ -308,7 +309,7 @@ span {
   background: #001e43;
 }
 .button.apply:hover, .button.apply:active {
-  color: #001e43;
+  color: #00c4b1;
   background: white;
 }
 a.button-a:link, a.button-a:visited {
@@ -487,7 +488,7 @@ show more, show less functionality */
   box-sizing: border-box;
   font-weight: 700;
   font-size: 1.3rem;
-  background: white;
+  background: white;  
   border-radius: 0.2rem;
   min-width: 1.4rem;
   padding: 0.5rem;
@@ -518,6 +519,7 @@ show more, show less functionality */
 @media (max-width: 380px) {
   .date-box .date-heading {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .date-heading div, .apply-date div {
@@ -533,6 +535,7 @@ show more, show less functionality */
 @media (max-width: 380px) {
   .date-box .apply-date {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -563,7 +566,7 @@ show more, show less functionality */
   padding: 0.5rem;
   justify-content: center;
   align-items: center;
-  color: #00c4b1;
+  color: #001e43;
   font-weight: 700;
   cursor: pointer;
 }
@@ -571,6 +574,10 @@ show more, show less functionality */
   padding-left: 0.5rem;
 }
 .toggle-link-button:hover {
-  color: #001e43;
+  /*color: #00c4b1;*/
+
+  background-color: #001e43;
+  color: white;
+
 }
 
