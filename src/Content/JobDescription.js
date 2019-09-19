@@ -68,7 +68,7 @@ export const ApplicationInfoBox = (props) => {
   )
 }
 
-const JobDescription = (props) => {
+const JobDescription = () => {
   // allText is true when all the job description text is visible and
   // false if only the beginning is visible
   const [allText, setAllText] = useState(null)
