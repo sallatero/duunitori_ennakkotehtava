@@ -1,9 +1,12 @@
-/******* Default styles, based on big screens 700px-> **********/
+/*********************** Default styles ************************/
 /***************************************************************/
 /* Styles designed for 3 screen sizes:
  * big: 700px -> (desktop, laptop)
  * medium: 380-700px ()
  * small: <- 380px (iPhone5, iPhone6)
+ *
+ * Styles are written for big first, and differences to medium
+ * and small are defined with media queries
 */
 
 /* Adjusting the width of the description container
@@ -16,7 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Source Sans Pro, sans-serif;
   font-size: 16px;
-  background: #f5f7f8;
+  background: #00c4b1;
   color: #3e3e41;
 }
 
@@ -25,12 +28,21 @@ span {
 }
 
 .site-canvas {
+  width: 100%;
+  /*background: #f5f7f8;*/
+  background-color: #00c4b1;
+}
+
+.page-container {
   margin: auto;
   width: 700px;
-  background: #f5f7f8;
+/*  background:#f5f7f8;*/
+  background: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
 @media (max-width: 700px) {
-  .site-canvas {
+  .page-container {
     width: 100%;
   }
 }
@@ -62,6 +74,15 @@ span {
   .header-banner-container .banner-image {
     max-height: 15rem;
   }
+}
+
+.header-banner-container .banner-logo {
+  width: 20%;
+  background: white;
+  padding: 0.1rem;
+  position: relative;
+  top: 3rem;
+  /*object-fit: cover;*/
 }
   
 /*** JOB INTRO BOX ************************************ JOB INTRO BOX ***********/
@@ -277,8 +298,11 @@ a.button-a:link, a.button-a:visited {
   border-radius: 0.2rem;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px rgba(0,0,0,0.1);
 }
-.description-container h2 {
-  color: #001e43;
+.description-container h2 { /****************----------------------------*/
+  /*color: #001e43;*/
+  color: white;
+  background-color: #001e43;
+  
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.3rem;
