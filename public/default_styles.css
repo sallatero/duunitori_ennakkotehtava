@@ -46,6 +46,11 @@ span {
     max-height: 20rem;
   }
 }
+@media (max-width: 380px) {
+  .header-banner-container {
+    max-height: 14rem;
+  }
+}
 
 .header-banner-container .banner-image {
   width: 100%;
